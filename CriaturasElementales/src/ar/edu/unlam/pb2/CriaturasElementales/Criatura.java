@@ -33,14 +33,14 @@ public abstract class Criatura {
 		return afinidad;
 	}
 
-	public void decrementarEnergia(int cantidad) {
+	public void decrementarEnergia(Integer cantidad) {
 		this.energia -= cantidad;
 		if(this.energia < 0) {
 			this.energia = 0;
 		}
 	}
 	
-	public void incrementarEnergia(int cantidad) {
+	public void incrementarEnergia(Integer cantidad) {
 		this.energia += cantidad;
 		if(this.energia > 200) {
 			this.energia = 200;
